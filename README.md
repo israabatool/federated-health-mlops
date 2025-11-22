@@ -1,1 +1,1 @@
-# federated-health-mlops
+# Federated Health MLOps Project 
