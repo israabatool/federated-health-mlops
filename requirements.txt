@@ -1,9 +1,5 @@
-tensorflow==2.12.0 
-tensorflow-federated 
-pandas 
-numpy 
-scikit-learn 
-mlflow 
-flask 
-prometheus_client 
-matplotlib 
+numpy==1.25.0
+pandas==2.3.3
+tensorflow==2.14.1
+tensorflow-federated==0.84.0
+

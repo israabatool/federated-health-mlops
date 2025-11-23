@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fhml-deployment
+  labels:
+    app: fhml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fhml
+  template:
+    metadata:
+      labels:
+        app: fhml
+    spec:
+      containers:
+      - name: fhml-container
+        image: fhml-serving:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        env:
+        - name: PORT
+          value: "8000"
+

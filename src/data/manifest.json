@@ -1,0 +1,7 @@
+{
+  "nodes": [
+    "node_A.csv",
+    "node_B.csv",
+    "node_C.csv"
+  ]
+}
